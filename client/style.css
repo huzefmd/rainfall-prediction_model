@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1741851374674-e4b7e573a9e7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: black;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  color: black;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.toggle button {
+  background: none;
+  color: #00f;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.message {
+  color: #ff4d4d;
+  text-align: center;
+  margin-top: 10px;
+}
+#loading {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}
+
+#toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #1e90ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 999;
+}
+
+.result-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100px;
+}
