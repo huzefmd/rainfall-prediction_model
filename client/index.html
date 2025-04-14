@@ -24,7 +24,7 @@
         border-radius: 20px;
         backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.15);
-        color: white;
+        color: black;
       }
 
       .input {
@@ -34,6 +34,9 @@
         border-radius: 8px;
         border: none;
         outline: none;
+      }
+      input::placeholder{
+        color: black;
       }
 
       button {
@@ -129,49 +132,49 @@
           class="input"
           type="number"
           name="temperature"
-          placeholder="Temperature"
-          required
-        />
-        <input
-          class="input"
-          type="number"
-          name="humidity"
-          placeholder="Humidity"
-          required
-        />
-        <input
-          class="input"
-          type="number"
-          name="windSpeed"
-          placeholder="Wind Speed"
-          required
-        />
-        <input
-          class="input"
-          type="number"
-          name="pressure"
           placeholder="Pressure"
           required
         />
         <input
           class="input"
           type="number"
+          name="humidity"
+          placeholder="Dewpoint"
+          required
+        />
+        <input
+          class="input"
+          type="number"
+          name="windSpeed"
+          placeholder="Humidity"
+          required
+        />
+        <input
+          class="input"
+          type="number"
+          name="pressure"
+          placeholder="Cloud"
+          required
+        />
+        <input
+          class="input"
+          type="number"
           name="feature5"
-          placeholder="Feature 5"
+          placeholder="Sunshine"
           required
         />
         <input
           class="input"
           type="number"
           name="feature6"
-          placeholder="Feature 6"
+          placeholder="Wind Direction "
           required
         />
         <input
           class="input"
           type="number"
           name="feature7"
-          placeholder="Feature 7"
+          placeholder="Wind Speed"
           required
         />
         <button type="submit">Predict</button>
